@@ -5,10 +5,9 @@ import Download from '../download/download.js';
 import img1 from '../../images/~ADADON4VZH(G@LAGP57)YX.png';
 import img2 from '../../images/~(%7QF0VVRKY}KT929Q522P.png';
 import img3 from '../../images/new1.jpg';
-import img4 from '../../images/~ADADON4VZH(G@LAGP57)YX.png';
-import img5 from '../../images/recruitLandlord_banner.jpg';
+import img4 from '../../images/recruitLandlord_banner.jpg';
 
-var image = [img1, img2, img3, img4, img5]
+var image = [img1, img2, img3, img4]
 
 
 
@@ -39,7 +38,7 @@ class LoneRent extends React.Component {
 				this.setState({
 					index: this.state.index + 1
 				})
-				if(this.state.index >= 5) {
+				if(this.state.index >= 4) {
 					this.setState({
 						index: 0
 					})

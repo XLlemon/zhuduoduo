@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/router-style/longrent.scss';
-
+import Download from '../download/download.js';
 
 import img1 from '../../images/~ADADON4VZH(G@LAGP57)YX.png';
 import img2 from '../../images/~(%7QF0VVRKY}KT929Q522P.png';
@@ -27,7 +27,7 @@ import p10 from '../../images/partner10.jpg';
 import p11 from '../../images/partner11.jpg';
 import p12 from '../../images/partner12.jpg';
 
-import img0 from '../../images/zhudd-code.png';
+
 
 class LoneRent extends React.Component {
 	constructor(props){
@@ -189,16 +189,7 @@ class LoneRent extends React.Component {
     		</div>
     	</div>
     	{/*下载*/}
-    	<div className='butexbox' id='zhubaCode'>
-     		<div className='butex section' id='butex'>
-     				<img src={img0} alt="" />
-     		</div>
-     		<div className='but_a' id='but_a'>
-     			<a href=""><i className='i1'></i></a>
-     				<span id='split'>&nbsp;&nbsp;</span>
-     			<a href=""><i className='i2'></i></a>
-     		</div>
-     	</div>
+    	 <Download />
       </div>
     );
   }

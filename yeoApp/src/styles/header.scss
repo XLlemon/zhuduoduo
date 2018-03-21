@@ -1,3 +1,6 @@
+.clearfix{
+        zoom: 1;
+    }
 .header{
     width: 100%;
     top: 0;
@@ -7,9 +10,7 @@
     z-index: 999;
     box-sizing: border-box;
     border-bottom: 1px solid #e45052;
-    .clearfix{
-        zoom: 1;
-    }
+    
     .header-inner{
         max-width: 1200px;
         margin: 0 auto;
@@ -21,6 +22,12 @@
             z-index: 5;
             position: relative;
         }
+    }
+    .menu{
+        position: absolute;
+        right: 5px;
+        top: 25px;
+        cursor: pointer;
     }
     .nav{
         float: right;
@@ -55,6 +62,32 @@
                 color: #e95456;
             }
             
+        }
+    }
+    @media screen and(min-width:810px){
+        #phoneMenuBtn{
+            display: none;
+        }
+        
+    }
+    @media screen and(max-width:810px){
+        #nav{
+            width: 100%;
+            display: none;
+            li{
+                a{
+                    color: #333;
+                    font-size: 16px;
+                    &:hover{
+                        border-top: 3px solid #fff;
+                        color: #e95456;
+                    }
+                }
+                
+            }
+        }
+        #phoneMenuBtn{
+            display: block;
         }
     }
 }

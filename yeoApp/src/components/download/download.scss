@@ -56,3 +56,8 @@
         display: none;
     }
 }
+@media screen and (max-width: 500px){
+    #butex .but {
+        width: 80%;
+    }
+}

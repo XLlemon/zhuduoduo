@@ -12,7 +12,7 @@ class Download extends React.Component {
     return (
     	<div className='butexbox' id='zhubaCode'>
      		<div className='butex section' id='butex'>
-     				<img src={img0} alt="" />
+     				<img className='but' src={img0} alt="" />
      		</div>
      		<div className='but_a' id='but_a'>
      			<a href=""><i className='i1'></i></a>

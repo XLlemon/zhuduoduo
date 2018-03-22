@@ -86,13 +86,13 @@
         }
     }
     
-    @media screen and (max-width: 1200px) and (min-width: 520px){
+    @media screen and (max-width: 1200px) and (min-width: 200px){
         #com-box {
             width: 100%;
         }
     }
     
-    @media screen and (max-width: 1200px) and (min-width: 800px){
+    @media screen and (max-width: 1200px) and (min-width: 200px){
         #com-box .c-list li{width: 33.3%;margin: 0;text-align: center;}
         #com-box .list-box{margin: 0 10px;}
         #com-box .list-time{width: 100px;}

@@ -2,16 +2,7 @@ import React from 'react';
 import '../../styles/router-style/longrent.scss';
 import Download from '../download/download.js';
 
-import img1 from '../../images/~ADADON4VZH(G@LAGP57)YX.png';
-import img2 from '../../images/~(%7QF0VVRKY}KT929Q522P.png';
-import img3 from '../../images/new1.jpg';
-import img4 from '../../images/recruitLandlord_banner.jpg';
-
-var image = [img1, img2, img3, img4]
-
-
-
-
+import Lunbo from '../lunbo/lunbo';
 
 import p1 from '../../images/partner1.jpg';
 import p2 from '../../images/partner2.jpg';
@@ -32,55 +23,13 @@ class LoneRent extends React.Component {
 	constructor(props){
 		super(props)
 		console.log('');
-		this.state = {
-			index: 0,
-			itm: setInterval(() => {
-				this.setState({
-					index: this.state.index + 1
-				})
-				if(this.state.index >= 4) {
-					this.setState({
-						index: 0
-					})
-				}
-			}, 2000)
-		}
-	}	
-	btn(res) {
-		this.setState({
-			index: res
-		})
-	}
-	componentWillUnmount(){
-	    clearInterval(this.state.itm);
-	}
+	};	
   render() {
   	let picture=[p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12]
     return (
       <div className="lonerent">
       	{/*轮播*/}
-    	<div className='lunbo'>
-    		<div className='lbbox'>
-	     		{
-	     			image.map((item,index)=>{
-	     				return (
-	     					<div key={index} src={item} className='img' style={{backgroundImage:'url('+ item +')',opacity:this.state.index==index?1:0}}></div>
-	     				)
-	     			})
-	     		}
-	     		<div className='btnbox'>
-	     				<div className='btnb'>
-		     				{
-		     					image.map((item,index)=>{
-		     						return (
-		     							<div key={index} className={this.state.index==index?"btn a1":'btn'} onClick={()=>{this.btn(index)}}></div>
-		     						)
-		     					})
-		     				}
-	     				</div>     				
-	     		</div>   		
-	     	</div>	
-    	</div>
+    	<Lunbo />
     	{/*理由*/}
     	<div className='section' id='selectReason'>
     		<h4 className='title-s1'>选择住多多的理由</h4>
